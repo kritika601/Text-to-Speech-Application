@@ -1,0 +1,694 @@
+Command: C:\Users\91931\.espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe C:\Kritika\ESP-IDF\v5.5.1\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Kritika\esp-adf\examples\player\pipeline_http_mp3\build\play_http_mp3.elf C:\Kritika\esp-adf\examples\player\pipeline_http_mp3\build\bootloader\bootloader.elf --force-color -m 'C:\Users\91931\.espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'C:\Kritika\ESP-IDF\v5.5.1\esp-idf\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 15 2025 12:08:30[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2bb50h (179024) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0003bb78 vaddr=3ffb0000 size=03fech ( 16364) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0003fb6c vaddr=40080000 size=004ach (  1196) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=c673ch (812860) map[0m
+[0;32mI (438) esp_image: segment 4: paddr=00106764 vaddr=400804ac size=19018h (102424) load[0m
+[0;32mI (478) esp_image: segment 5: paddr=0011f784 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (491) boot: Disabling RNG early entropy source...[0m
+[0;32mI (501) cpu_start: Multicore app[0m
+[0;32mI (510) cpu_start: Pro cpu start user code[0m
+[0;32mI (510) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (510) app_init: Application information:[0m
+[0;32mI (510) app_init: Project name:     play_http_mp3[0m
+[0;32mI (514) app_init: App version:      ad4ac70-dirty[0m
+[0;32mI (519) app_init: Compile time:     Sep 15 2025 12:05:39[0m
+[0;32mI (524) app_init: ELF file SHA256:  628319aec...[0m
+[0;32mI (528) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (532) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (536) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (540) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (544) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (550) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFB8A38 len 000275C8 (157 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (571) heap_init: At 400994C4 len 00006B3C (26 KiB): IRAM[0m
+[0;33mW (578) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (596) legacy_touch_driver: legacy touch driver is deprecated, please migrate to use driver/touch_sens.h[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (636) HTTP_MP3_EXAMPLE: [ 1 ] Start audio codec chip[0m
+[0;33mW (636) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.0] Create audio pipeline for playback[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.1] Create http stream to read data[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.2] Create i2s stream to write data to codec chip[0m
+[0;32mI (666) HTTP_MP3_EXAMPLE: [2.3] Create mp3 decoder to decode mp3 file[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.4] Register all elements to audio pipeline[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.5] Link it together http_stream-->mp3_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (686) HTTP_MP3_EXAMPLE: [2.6] Set up  uri (http as http_stream, mp3 as mp3 decoder, and default output is i2s)[0m
+[0;32mI (696) HTTP_MP3_EXAMPLE: [ 3 ] Start and wait for Wi-Fi network[0m
+[1;31mE (706) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (736) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;33mW (826) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:43[0m
+[0;33mW (8426) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:4[0m
+[0;32mI (9626) HTTP_MP3_EXAMPLE: [ 4 ] Set up  event listener[0m
+[0;32mI (9626) HTTP_MP3_EXAMPLE: [4.1] Listening event from all elements of pipeline[0m
+[0;32mI (9626) HTTP_MP3_EXAMPLE: [4.2] Listening event from peripherals[0m
+[0;32mI (9626) HTTP_MP3_EXAMPLE: [ 5 ] Start audio_pipeline[0m
+[0;33mW (9636) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (9646) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (9926) HTTP_MP3_EXAMPLE: [ * ] Receive music info from mp3 decoder, sample_rates=24000, bits=16, ch=1[0m
+[0;33mW (9966) HTTP_STREAM: No more data,errno:0, total_bytes:17088, rlen = 0[0m
+[0;33mW (11846) HTTP_MP3_EXAMPLE: [ * ] Stop event received[0m
+[0;32mI (11846) HTTP_MP3_EXAMPLE: [ 6 ] Stop audio_pipeline[0m
+[0;33mW (11846) AUDIO_ELEMENT: [http] Element already stopped[0m
+[0;33mW (11846) AUDIO_ELEMENT: [mp3] Element already stopped[0m
+[0;33mW (11846) AUDIO_ELEMENT: [i2s] Element already stopped[0m
+[0;33mW (11856) AUDIO_PIPELINE: There are no listener registered[0m
+[0;33mW (11856) AUDIO_ELEMENT: [http] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (11866) AUDIO_ELEMENT: [i2s] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (11876) AUDIO_ELEMENT: [mp3] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (11896) PERIPH_WIFI: Wi-Fi disconnected from SSID MMTAIR, auto-reconnect disabled, reconnect after 1000 ms[0m
+[0;33mW (11906) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:3[0m
+���������������������������������������������������������������� Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 15 2025 12:08:30[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2bb50h (179024) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0003bb78 vaddr=3ffb0000 size=03fech ( 16364) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0003fb6c vaddr=40080000 size=004ach (  1196) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=c673ch (812860) map[0m
+[0;32mI (438) esp_image: segment 4: paddr=00106764 vaddr=400804ac size=19018h (102424) load[0m
+[0;32mI (478) esp_image: segment 5: paddr=0011f784 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (491) boot: Disabling RNG early entropy source...[0m
+[0;32mI (501) cpu_start: Multicore app[0m
+[0;32mI (510) cpu_start: Pro cpu start user code[0m
+[0;32mI (510) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (510) app_init: Application information:[0m
+[0;32mI (510) app_init: Project name:     play_http_mp3[0m
+[0;32mI (514) app_init: App version:      ad4ac70-dirty[0m
+[0;32mI (519) app_init: Compile time:     Sep 15 2025 12:05:39[0m
+[0;32mI (524) app_init: ELF file SHA256:  628319aec...[0m
+[0;32mI (528) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (532) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (536) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (540) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (544) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (550) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFB8A38 len 000275C8 (157 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (571) heap_init: At 400994C4 len 00006B3C (26 KiB): IRAM[0m
+[0;33mW (578) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (596) legacy_touch_driver: legacy touch driver is deprecated, please migrate to use driver/touch_sens.h[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (636) HTTP_MP3_EXAMPLE: [ 1 ] Start audio codec chip[0m
+[0;33mW (636) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.0] Create audio pipeline for playback[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.1] Create http stream to read data[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.2] Create i2s stream to write data to codec chip[0m
+[0;32mI (666) HTTP_MP3_EXAMPLE: [2.3] Create mp3 decoder to decode mp3 file[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.4] Register all elements to audio pipeline[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.5] Link it together http_stream-->mp3_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (686) HTTP_MP3_EXAMPLE: [2.6] Set up  uri (http as http_stream, mp3 as mp3 decoder, and default output is i2s)[0m
+[0;32mI (696) HTTP_MP3_EXAMPLE: [ 3 ] Start and wait for Wi-Fi network[0m
+[1;31mE (706) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (736) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;33mW (846) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:43[0m
+[0;33mW (2076) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:4[0m
+[0;32mI (3316) HTTP_MP3_EXAMPLE: [ 4 ] Set up  event listener[0m
+[0;32mI (3316) HTTP_MP3_EXAMPLE: [4.1] Listening event from all elements of pipeline[0m
+[0;32mI (3316) HTTP_MP3_EXAMPLE: [4.2] Listening event from peripherals[0m
+[0;32mI (3316) HTTP_MP3_EXAMPLE: [ 5 ] Start audio_pipeline[0m
+[0;33mW (3326) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (3336) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (4806) HTTP_MP3_EXAMPLE: [ * ] Receive music info from mp3 decoder, sample_rates=24000, bits=16, ch=1[0m
+[0;33mW (4856) HTTP_STREAM: No more data,errno:0, total_bytes:17088, rlen = 0[0m
+[0;33mW (6746) HTTP_MP3_EXAMPLE: [ * ] Stop event received[0m
+[0;32mI (6746) HTTP_MP3_EXAMPLE: [ 6 ] Stop audio_pipeline[0m
+[0;33mW (6746) AUDIO_ELEMENT: [http] Element already stopped[0m
+[0;33mW (6746) AUDIO_ELEMENT: [mp3] Element already stopped[0m
+[0;33mW (6756) AUDIO_ELEMENT: [i2s] Element already stopped[0m
+[0;33mW (6756) AUDIO_PIPELINE: There are no listener registered[0m
+[0;33mW (6766) AUDIO_ELEMENT: [http] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (6766) AUDIO_ELEMENT: [i2s] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (6776) AUDIO_ELEMENT: [mp3] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (6796) PERIPH_WIFI: Wi-Fi disconnected from SSID MMTAIR, auto-reconnect disabled, reconnect after 1000 ms[0m
+[0;33mW (6806) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:3[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 15 2025 12:08:30[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2bb50h (179024) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0003bb78 vaddr=3ffb0000 size=03fech ( 16364) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0003fb6c vaddr=40080000 size=004ach (  1196) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=c673ch (812860) map[0m
+[0;32mI (438) esp_image: segment 4: paddr=00106764 vaddr=400804ac size=19018h (102424) load[0m
+[0;32mI (478) esp_image: segment 5: paddr=0011f784 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (491) boot: Disabling RNG early entropy source...[0m
+[0;32mI (501) cpu_start: Multicore app[0m
+[0;32mI (510) cpu_start: Pro cpu start user code[0m
+[0;32mI (510) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (510) app_init: Application information:[0m
+[0;32mI (510) app_init: Project name:     play_http_mp3[0m
+[0;32mI (514) app_init: App version:      ad4ac70-dirty[0m
+[0;32mI (519) app_init: Compile time:     Sep 15 2025 12:05:39[0m
+[0;32mI (524) app_init: ELF file SHA256:  628319aec...[0m
+[0;32mI (528) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (532) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (536) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (540) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (544) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (550) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFB8A38 len 000275C8 (157 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (571) heap_init: At 400994C4 len 00006B3C (26 KiB): IRAM[0m
+[0;33mW (578) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (596) legacy_touch_driver: legacy touch driver is deprecated, please migrate to use driver/touch_sens.h[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (636) HTTP_MP3_EXAMPLE: [ 1 ] Start audio codec chip[0m
+[0;33mW (636) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.0] Create audio pipeline for playback[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.1] Create http stream to read data[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.2] Create i2s stream to write data to codec chip[0m
+[0;32mI (666) HTTP_MP3_EXAMPLE: [2.3] Create mp3 decoder to decode mp3 file[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.4] Register all elements to audio pipeline[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.5] Link it together http_stream-->mp3_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (686) HTTP_MP3_EXAMPLE: [2.6] Set up  uri (http as http_stream, mp3 as mp3 decoder, and default output is i2s)[0m
+[0;32mI (696) HTTP_MP3_EXAMPLE: [ 3 ] Start and wait for Wi-Fi network[0m
+[1;31mE (706) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (736) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;33mW (906) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:43[0m
+[0;33mW (2116) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:4[0m
+[0;32mI (3396) HTTP_MP3_EXAMPLE: [ 4 ] Set up  event listener[0m
+[0;32mI (3396) HTTP_MP3_EXAMPLE: [4.1] Listening event from all elements of pipeline[0m
+[0;32mI (3396) HTTP_MP3_EXAMPLE: [4.2] Listening event from peripherals[0m
+[0;32mI (3396) HTTP_MP3_EXAMPLE: [ 5 ] Start audio_pipeline[0m
+[0;33mW (3406) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (3416) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (3776) HTTP_STREAM: No more data,errno:0, total_bytes:17088, rlen = 0[0m
+[0;32mI (3776) HTTP_MP3_EXAMPLE: [ * ] Receive music info from mp3 decoder, sample_rates=24000, bits=16, ch=1[0m
+[0;33mW (5546) HTTP_MP3_EXAMPLE: [ * ] Stop event received[0m
+[0;32mI (5546) HTTP_MP3_EXAMPLE: [ 6 ] Stop audio_pipeline[0m
+[0;33mW (5546) AUDIO_ELEMENT: [http] Element already stopped[0m
+[0;33mW (5556) AUDIO_ELEMENT: [mp3] Element already stopped[0m
+[0;33mW (5556) AUDIO_ELEMENT: [i2s] Element already stopped[0m
+[0;33mW (5566) AUDIO_PIPELINE: There are no listener registered[0m
+[0;33mW (5566) AUDIO_ELEMENT: [http] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (5576) AUDIO_ELEMENT: [i2s] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (5586) AUDIO_ELEMENT: [mp3] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (5596) PERIPH_WIFI: Wi-Fi disconnected from SSID MMTAIR, auto-reconnect disabled, reconnect after 1000 ms[0m
+[0;33mW (5596) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:3[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 15 2025 12:08:30[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2bb50h (179024) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0003bb78 vaddr=3ffb0000 size=03fech ( 16364) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0003fb6c vaddr=40080000 size=004ach (  1196) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=c673ch (812860) map[0m
+[0;32mI (438) esp_image: segment 4: paddr=00106764 vaddr=400804ac size=19018h (102424) load[0m
+[0;32mI (478) esp_image: segment 5: paddr=0011f784 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (491) boot: Disabling RNG early entropy source...[0m
+[0;32mI (501) cpu_start: Multicore app[0m
+[0;32mI (510) cpu_start: Pro cpu start user code[0m
+[0;32mI (510) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (510) app_init: Application information:[0m
+[0;32mI (510) app_init: Project name:     play_http_mp3[0m
+[0;32mI (514) app_init: App version:      ad4ac70-dirty[0m
+[0;32mI (519) app_init: Compile time:     Sep 15 2025 12:05:39[0m
+[0;32mI (524) app_init: ELF file SHA256:  628319aec...[0m
+[0;32mI (528) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (532) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (536) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (540) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (544) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (550) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFB8A38 len 000275C8 (157 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (571) heap_init: At 400994C4 len 00006B3C (26 KiB): IRAM[0m
+[0;33mW (578) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (596) legacy_touch_driver: legacy touch driver is deprecated, please migrate to use driver/touch_sens.h[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (636) HTTP_MP3_EXAMPLE: [ 1 ] Start audio codec chip[0m
+[0;33mW (636) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.0] Create audio pipeline for playback[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.1] Create http stream to read data[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.2] Create i2s stream to write data to codec chip[0m
+[0;32mI (666) HTTP_MP3_EXAMPLE: [2.3] Create mp3 decoder to decode mp3 file[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.4] Register all elements to aud�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 15 2025 12:08:30[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2bb50h (179024) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0003bb78 vaddr=3ffb0000 size=03fech ( 16364) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0003fb6c vaddr=40080000 size=004ach (  1196) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=c673ch (812860) map[0m
+[0;32mI (438) esp_image: segment 4: paddr=00106764 vaddr=400804ac size=19018h (102424) load[0m
+[0;32mI (478) esp_image: segment 5: paddr=0011f784 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (491) boot: Disabling RNG early entropy source...[0m
+[0;32mI (501) cpu_start: Multicore app[0m
+[0;32mI (510) cpu_start: Pro cpu start user code[0m
+[0;32mI (510) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (510) app_init: Application information:[0m
+[0;32mI (510) app_init: Project name:     play_http_mp3[0m
+[0;32mI (514) app_init: App version:      ad4ac70-dirty[0m
+[0;32mI (519) app_init: Compile time:     Sep 15 2025 12:05:39[0m
+[0;32mI (524) app_init: ELF file SHA256:  628319aec...[0m
+[0;32mI (528) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (532) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (536) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (540) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (544) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (550) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFB8A38 len 000275C8 (157 KiB): DRAM[0m
+I (560) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+[0;32mI (566) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (571) heap_init: At 400994C4 len 00006B3C (26 KiB): IRAM[0m
+[0;33mW (578) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (596) legacy_touch_driver: legacy touch driver is deprecated, please migrate to use driver/touch_sens.h[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (636) HTTP_MP3_EXAMPLE: [ 1 ] Start audio codec chip[0m
+[0;33mW (636) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.0] Create audio pipeline for playback[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.1] Create http stream to read data[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.2] Create i2s stream to write data to codec chip[0m
+[0;32mI (666) HTTP_MP3_EXAMPLE: [2.3] Create mp3 decoder to decode mp3 file[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.4] Register all elements to audio pipeline[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.5] Link it together http_stream-->mp3_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (686) HTTP_MP3_EXAMPLE: [2.6] Set up  uri (http as http_stream, mp3 as mp3 decoder, and default output is i2s)[0m
+[0;32mI (696) HTTP_MP3_EXAMPLE: [ 3 ] Start and wait for Wi-Fi network[0m
+[1;31mE (706) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (736) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;33mW (826) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:43[0m
+[0;33mW (2046) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:4[0m
+[0;32mI (3306) HTTP_MP3_EXAMPLE: [ 4 ] Set up  event listener[0m
+[0;32mI (3306) HTTP_MP3_EXAMPLE: [4.1] Listening event from all elements of pipeline[0m
+[0;32mI (3306) HTTP_MP3_EXAMPLE: [4.2] Listening event from peripherals[0m
+[0;32mI (3306) HTTP_MP3_EXAMPLE: [ 5 ] Start audio_pipeline[0m
+[0;33mW (3316) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (3326) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (3446) HTTP_MP3_EXAMPLE: [ * ] Receive music info from mp3 decoder, sample_rates=24000, bits=16, ch=1[0m
+[0;33mW (3486) HTTP_STREAM: No more data,errno:0, total_bytes:17088, rlen = 0[0m
+[0;33mW (5436) HTTP_MP3_EXAMPLE: [ * ] Stop event received[0m
+[0;32mI (5436) HTTP_MP3_EXAMPLE: [ 6 ] Stop audio_pipeline[0m
+[0;33mW (5436) AUDIO_ELEMENT: [http] Element already stopped[0m
+[0;33mW (5446) AUDIO_ELEMENT: [mp3] Element already stopped[0m
+[0;33mW (5446) AUDIO_ELEMENT: [i2s] Element already stopped[0m
+[0;33mW (5456) AUDIO_PIPELINE: There are no listener registered[0m
+[0;33mW (5456) AUDIO_ELEMENT: [http] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (5466) AUDIO_ELEMENT: [i2s] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (5476) AUDIO_ELEMENT: [mp3] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (5486) PERIPH_WIFI: Wi-Fi disconnected from SSID MMTAIR, auto-reconnect disabled, reconnect after 1000 ms[0m
+[0;33mW (5496) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:3[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 15 2025 12:08:30[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2bb50h (179024) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0003bb78 vaddr=3ffb0000 size=03fech ( 16364) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0003fb6c vaddr=40080000 size=004ach (  1196) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=c673ch (812860) map[0m
+[0;32mI (438) esp_image: segment 4: paddr=00106764 vaddr=400804ac size=19018h (102424) load[0m
+[0;32mI (478) esp_image: segment 5: paddr=0011f784 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (491) boot: Disabling RNG early entropy source...[0m
+[0;32mI (501) cpu_start: Multicore app[0m
+[0;32mI (510) cpu_start: Pro cpu start user code[0m
+[0;32mI (510) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (510) app_init: Application information:[0m
+[0;32mI (510) app_init: Project name:     play_http_mp3[0m
+[0;32mI (514) app_init: App version:      ad4ac70-dirty[0m
+[0;32mI (519) app_init: Compile time:     Sep 15 2025 12:05:39[0m
+[0;32mI (524) app_init: ELF file SHA256:  628319aec...[0m
+[0;32mI (528) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (532) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (536) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (540) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (544) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (550) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFB8A38 len 000275C8 (157 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (571) heap_init: At 400994C4 len 00006B3C (26 KiB): IRAM[0m
+[0;33mW (578) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (596) legacy_touch_driver: legacy touch driver is deprecated, please migrate to use driver/touch_sens.h[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (636) HTTP_MP3_EXAMPLE: [ 1 ] Start audio codec chip[0m
+[0;33mW (636) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.0] Create audio pipeline for playback[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.1] Create http stream to read data[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.2] Create i2s stream to write data to codec chip[0m
+[0;32mI (666) HTTP_MP3_EXAMPLE: [2.3] Create mp3 decoder to decode mp3 file[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.4] Register all elements to audio pipeline[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.5] Link it together http_stream-->mp3_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (686) HTTP_MP3_EXAMPLE: [2.6] Set up  uri (http as http_stream, mp3 as mp3 decoder, and default output is i2s)[0m
+[0;32mI (696) HTTP_MP3_EXAMPLE: [ 3 ] Start and wait for Wi-Fi network[0m
+[1;31mE (706) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (736) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;33mW (826) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:43[0m
+[0;33mW (2036) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:4[0m
+[0;32mI (3286) HTTP_MP3_EXAMPLE: [ 4 ] Set up  event listener[0m
+[0;32mI (3286) HTTP_MP3_EXAMPLE: [4.1] Listening event from all elements of pipeline[0m
+[0;32mI (3286) HTTP_MP3_EXAMPLE: [4.2] Listening event from peripherals[0m
+[0;32mI (3286) HTTP_MP3_EXAMPLE: [ 5 ] Start audio_pipeline[0m
+[0;33mW (3296) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (3306) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (3456) HTTP_STREAM: No more data,errno:0, total_bytes:9408, rlen = 0[0m
+[0;32mI (3476) HTTP_MP3_EXAMPLE: [ * ] Receive music info from mp3 decoder, sample_rates=24000, bits=16, ch=1[0m
+[0;33mW (4446) HTTP_MP3_EXAMPLE: [ * ] Stop event received[0m
+[0;32mI (4446) HTTP_MP3_EXAMPLE: [ 6 ] Stop audio_pipeline[0m
+[0;33mW (4446) AUDIO_ELEMENT: [http] Element already stopped[0m
+[0;33mW (4446) AUDIO_ELEMENT: [mp3] Element already stopped[0m
+[0;33mW (4456) AUDIO_ELEMENT: [i2s] Element already stopped[0m
+[0;33mW (4456) AUDIO_PIPELINE: There are no listener registered[0m
+[0;33mW (4466) AUDIO_ELEMENT: [http] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (4476) AUDIO_ELEMENT: [i2s] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (4476) AUDIO_ELEMENT: [mp3] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (4496) PERIPH_WIFI: Wi-Fi disconnected from SSID MMTAIR, auto-reconnect disabled, reconnect after 1000 ms[0m
+[0;33mW (4506) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:3[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 15 2025 12:08:30[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2bb50h (179024) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0003bb78 vaddr=3ffb0000 size=03fech ( 16364) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0003fb6c vaddr=40080000 size=004ach (  1196) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=c673ch (812860) map[0m
+[0;32mI (438) esp_image: segment 4: paddr=00106764 vaddr=400804ac size=19018h (102424) load[0m
+[0;32mI (478) esp_image: segment 5: paddr=0011f784 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (491) boot: Disabling RNG early entropy source...[0m
+[0;32mI (501) cpu_start: Multicore app[0m
+[0;32mI (510) cpu_start: Pro cpu start user code[0m
+[0;32mI (510) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (510) app_init: Application information:[0m
+[0;32mI (510) app_init: Project name:     play_http_mp3[0m
+[0;32mI (514) app_init: App version:      ad4ac70-dirty[0m
+[0;32mI (519) app_init: Compile time:     Sep 15 2025 12:05:39[0m
+[0;32mI (524) app_init: ELF file SHA256:  628319aec...[0m
+[0;32mI (528) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (532) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (536) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (540) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (544) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (550) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFB8A38 len 000275C8 (157 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (571) heap_init: At 400994C4 len 00006B3C (26 KiB): IRAM[0m
+[0;33mW (578) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (596) legacy_touch_driver: legacy touch driver is deprecated, please migrate to use driver/touch_sens.h[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (636) HTTP_MP3_EXAMPLE: [ 1 ] Start audio codec chip[0m
+[0;33mW (636) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.0] Create audio pipeline for playback[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.1] Create http stream to read data[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.2] Create i2s stream to write data to codec chip[0m
+[0;32mI (666) HTTP_MP3_EXAMPLE: [2.3] Create mp3 decoder to decode mp3 file[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.4] Register all elements to audio pipeline[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.5] Link it together http_stream-->mp3_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (686) HTTP_MP3_EXAMPLE: [2.6] Set up  uri (http as http_stream, mp3 as mp3 decoder, and default output is i2s)[0m
+[0;32mI (696) HTTP_MP3_EXAMPLE: [ 3 ] Start and wait for Wi-Fi network[0m
+[1;31mE (706) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (736) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;33mW (826) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:43[0m
+[0;33mW (2036) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:4[0m
+[0;32mI (3826) HTTP_MP3_EXAMPLE: [ 4 ] Set up  event listener[0m
+[0;32mI (3826) HTTP_MP3_EXAMPLE: [4.1] Listening event from all elements of pipeline[0m
+[0;32mI (3826) HTTP_MP3_EXAMPLE: [4.2] Listening event from peripherals[0m
+[0;32mI (3826) HTTP_MP3_EXAMPLE: [ 5 ] Start audio_pipeline[0m
+[0;33mW (3836) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (3846) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (4166) HTTP_MP3_EXAMPLE: [ * ] Receive music info from mp3 decoder, sample_rates=24000, bits=16, ch=1[0m
+[0;33mW (4166) HTTP_STREAM: No more data,errno:0, total_bytes:10176, rlen = 0[0m
+[0;33mW (5306) HTTP_MP3_EXAMPLE: [ * ] Stop event received[0m
+[0;32mI (5306) HTTP_MP3_EXAMPLE: [ 6 ] Stop audio_pipeline[0m
+[0;33mW (5306) AUDIO_ELEMENT: [http] Element already stopped[0m
+[0;33mW (5306) AUDIO_ELEMENT: [mp3] Element already stopped[0m
+[0;33mW (5316) AUDIO_ELEMENT: [i2s] Element already stopped[0m
+[0;33mW (5316) AUDIO_PIPELINE: There are no listener registered[0m
+[0;33mW (5326) AUDIO_ELEMENT: [http] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (5326) AUDIO_ELEMENT: [i2s] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (5336) AUDIO_ELEMENT: [mp3] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (5356) PERIPH_WIFI: Wi-Fi disconnected from SSID MMTAIR, auto-reconnect disabled, reconnect after 1000 ms[0m
+[0;33mW (5366) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:3[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep 15 2025 12:08:30[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2bb50h (179024) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0003bb78 vaddr=3ffb0000 size=03fech ( 16364) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0003fb6c vaddr=40080000 size=004ach (  1196) load[0m
+[0;32mI (156) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=c673ch (812860) map[0m
+[0;32mI (438) esp_image: segment 4: paddr=00106764 vaddr=400804ac size=19018h (102424) load[0m
+[0;32mI (478) esp_image: segment 5: paddr=0011f784 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (491) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (491) boot: Disabling RNG early entropy source...[0m
+[0;32mI (501) cpu_start: Multicore app[0m
+[0;32mI (510) cpu_start: Pro cpu start user code[0m
+[0;32mI (510) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (510) app_init: Application information:[0m
+[0;32mI (510) app_init: Project name:     play_http_mp3[0m
+[0;32mI (514) app_init: App version:      ad4ac70-dirty[0m
+[0;32mI (519) app_init: Compile time:     Sep 15 2025 12:05:39[0m
+[0;32mI (524) app_init: ELF file SHA256:  628319aec...[0m
+[0;32mI (528) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (532) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (536) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (540) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (544) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (550) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFB8A38 len 000275C8 (157 KiB): DRAM[0m
+[0;32mI (560) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (571) heap_init: At 400994C4 len 00006B3C (26 KiB): IRAM[0m
+[0;33mW (578) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (590) spi_flash: detected chip: generic[0m
+[0;32mI (593) spi_flash: flash io: dio[0m
+[0;33mW (596) legacy_touch_driver: legacy touch driver is deprecated, please migrate to use driver/touch_sens.h[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (636) HTTP_MP3_EXAMPLE: [ 1 ] Start audio codec chip[0m
+[0;33mW (636) i2c_bus_v2: I2C master handle is NULL, will create new one[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.0] Create audio pipeline for playback[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.1] Create http stream to read data[0m
+[0;32mI (656) HTTP_MP3_EXAMPLE: [2.2] Create i2s stream to write data to codec chip[0m
+[0;32mI (666) HTTP_MP3_EXAMPLE: [2.3] Create mp3 decoder to decode mp3 file[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.4] Register all elements to audio pipeline[0m
+[0;32mI (676) HTTP_MP3_EXAMPLE: [2.5] Link it together http_stream-->mp3_decoder-->i2s_stream-->[codec_chip][0m
+[0;32mI (686) HTTP_MP3_EXAMPLE: [2.6] Set up  uri (http as http_stream, mp3 as mp3 decoder, and default output is i2s)[0m
+[0;32mI (696) HTTP_MP3_EXAMPLE: [ 3 ] Start and wait for Wi-Fi network[0m
+[1;31mE (706) gpio: gpio_install_isr_service(526): GPIO isr service already installed[0m
+[0;33mW (736) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;33mW (846) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:43[0m
+[0;33mW (2056) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:4[0m
+[0;32mI (3296) HTTP_MP3_EXAMPLE: [ 4 ] Set up  event listener[0m
+[0;32mI (3296) HTTP_MP3_EXAMPLE: [4.1] Listening event from all elements of pipeline[0m
+[0;32mI (3296) HTTP_MP3_EXAMPLE: [4.2] Listening event from peripherals[0m
+[0;32mI (3296) HTTP_MP3_EXAMPLE: [ 5 ] Start audio_pipeline[0m
+[0;33mW (3306) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;33mW (3316) AUDIO_THREAD: Make sure selected the `CONFIG_SPIRAM_BOOT_INIT` and `CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY` by `make menuconfig`[0m
+[0;32mI (3486) HTTP_MP3_EXAMPLE: [ * ] Receive music info from mp3 decoder, sample_rates=24000, bits=16, ch=1[0m
+[0;33mW (3496) HTTP_STREAM: No more data,errno:0, total_bytes:10176, rlen = 0[0m
+[0;33mW (4636) HTTP_MP3_EXAMPLE: [ * ] Stop event received[0m
+[0;32mI (4636) HTTP_MP3_EXAMPLE: [ 6 ] Stop audio_pipeline[0m
+[0;33mW (4636) AUDIO_ELEMENT: [http] Element already stopped[0m
+[0;33mW (4636) AUDIO_ELEMENT: [mp3] Element already stopped[0m
+[0;33mW (4646) AUDIO_ELEMENT: [i2s] Element already stopped[0m
+[0;33mW (4646) AUDIO_PIPELINE: There are no listener registered[0m
+[0;33mW (4656) AUDIO_ELEMENT: [http] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (4656) AUDIO_ELEMENT: [i2s] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (4666) AUDIO_ELEMENT: [mp3] Element has not create when AUDIO_ELEMENT_TERMINATE[0m
+[0;33mW (4686) PERIPH_WIFI: Wi-Fi disconnected from SSID MMTAIR, auto-reconnect disabled, reconnect after 1000 ms[0m
+[0;33mW (4686) PERIPH_WIFI: WiFi Event cb, Unhandle event_base:WIFI_EVENT, event_id:3[0m

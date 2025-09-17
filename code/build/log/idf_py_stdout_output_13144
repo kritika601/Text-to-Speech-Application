@@ -1,0 +1,25 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Kritika\esp-adf\examples\player\pipeline_http_mp3\build\bootloader\esp-idf\esptool_py && C:\Users\91931\.espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe C:/Kritika/ESP-IDF/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Kritika/esp-adf/examples/player/pipeline_http_mp3/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/play_http_mp3_example.c.obj
+In file included from C:/Kritika/ESP-IDF/v5.5.1/esp-idf/components/driver/touch_sensor/include/driver/touch_pad.h:12,
+                 from C:/Kritika/esp-adf/components/audio_board/lyrat_v4_3/board_def.h:28,
+                 from C:/Kritika/esp-adf/components/audio_board/lyrat_v4_3/board.h:29,
+                 from C:/Kritika/esp-adf/examples/player/pipeline_http_mp3/main/play_http_mp3_example.c:24:
+C:/Kritika/ESP-IDF/v5.5.1/esp-idf/components/driver/touch_sensor/esp32/include/driver/touch_sensor.h:13:2: warning: #warning "This set of Touch APIs has been deprecated, please include 'driver/touch_sens.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'Touch Configuration' menu in Kconfig" [-Wcpp]
+   13 | #warning "This set of Touch APIs has been deprecated, \
+      |  ^~~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable play_http_mp3.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Kritika/esp-adf/examples/player/pipeline_http_mp3/build/play_http_mp3.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Kritika\esp-adf\examples\player\pipeline_http_mp3\build\esp-idf\esptool_py && C:\Users\91931\.espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe C:/Kritika/ESP-IDF/v5.5.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Kritika/esp-adf/examples/player/pipeline_http_mp3/build/partition_table/partition-table.bin C:/Kritika/esp-adf/examples/player/pipeline_http_mp3/build/play_http_mp3.bin"
+play_http_mp3.bin binary size 0x10f6e0 bytes. Smallest app partition is 0x300000 bytes. 0x1f0920 bytes (65%) free.

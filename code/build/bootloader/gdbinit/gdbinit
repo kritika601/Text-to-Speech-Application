@@ -1,0 +1,2 @@
+source C:/Kritika/esp-adf/examples/player/pipeline_http_mp3/build/bootloader/gdbinit/symbols
+source C:/Kritika/esp-adf/examples/player/pipeline_http_mp3/build/bootloader/gdbinit/connect
