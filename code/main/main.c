@@ -107,15 +107,15 @@ void app_main(void)
 
 
     ESP_LOGI(TAG, "[2.6] Set up  uri (http as http_stream, mp3 as mp3 decoder, and default output is i2s)");
-    audio_element_set_uri(http_stream_reader, "http://192.168.1.35:8000/tts.mp3");
+    audio_element_set_uri(http_stream_reader, "http://(YOUR_IP_ADDRESS_HERE):8000/tts.mp3");
 
 
     ESP_LOGI(TAG, "[ 3 ] Start and wait for Wi-Fi network");
     esp_periph_config_t periph_cfg = DEFAULT_ESP_PERIPH_SET_CONFIG();
     esp_periph_set_handle_t set = esp_periph_set_init(&periph_cfg);
     periph_wifi_cfg_t wifi_cfg = {
-        .wifi_config.sta.ssid = "MMTAIR",
-        .wifi_config.sta.password = "mom@09!@",
+        .wifi_config.sta.ssid = "****",
+        .wifi_config.sta.password = "****",
     };
     esp_periph_handle_t wifi_handle = periph_wifi_init(&wifi_cfg);
     esp_periph_start(set, wifi_handle);
