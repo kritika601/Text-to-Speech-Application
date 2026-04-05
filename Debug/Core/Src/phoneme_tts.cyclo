@@ -1,0 +1,11 @@
+../Core/Src/phoneme_tts.c:168:12:SynthesizePhoneme	42
+../Core/Src/phoneme_tts.c:335:23:LookupWord	6
+../Core/Src/phoneme_tts.c:357:13:SpellWord	9
+../Core/Src/phoneme_tts.c:394:6:TTS_Init	1
+../Core/Src/phoneme_tts.c:400:6:TTS_SpeakWord	7
+../Core/Src/phoneme_tts.c:437:6:TTS_Speak	9
+../Core/Src/phoneme_tts.c:465:6:TTS_SpeakNumber	8
+../Core/Src/phoneme_tts.c:505:5:TTS_IsBusy	1
+../Core/Src/phoneme_tts.c:509:6:TTS_SetSpeed	1
+../Core/Src/phoneme_tts.c:513:6:TTS_SetPitch	1
+../Core/Src/phoneme_tts.c:518:6:HAL_I2S_TxCpltCallback	2

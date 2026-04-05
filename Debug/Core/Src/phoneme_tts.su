@@ -1,0 +1,11 @@
+../Core/Src/phoneme_tts.c:168:12:SynthesizePhoneme	128	static
+../Core/Src/phoneme_tts.c:335:23:LookupWord	96	static
+../Core/Src/phoneme_tts.c:357:13:SpellWord	128	static
+../Core/Src/phoneme_tts.c:394:6:TTS_Init	4	static
+../Core/Src/phoneme_tts.c:400:6:TTS_SpeakWord	120	static
+../Core/Src/phoneme_tts.c:437:6:TTS_Speak	96	static
+../Core/Src/phoneme_tts.c:465:6:TTS_SpeakNumber	96	static
+../Core/Src/phoneme_tts.c:505:5:TTS_IsBusy	4	static
+../Core/Src/phoneme_tts.c:509:6:TTS_SetSpeed	16	static
+../Core/Src/phoneme_tts.c:513:6:TTS_SetPitch	16	static
+../Core/Src/phoneme_tts.c:518:6:HAL_I2S_TxCpltCallback	16	static

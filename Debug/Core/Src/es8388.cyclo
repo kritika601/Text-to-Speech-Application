@@ -1,0 +1,8 @@
+../Core/Src/es8388.c:11:26:ES8388_Write	8
+../Core/Src/es8388.c:43:9:ES8388_Read	1
+../Core/Src/es8388.c:51:6:ES8388_PrintRegisters	2
+../Core/Src/es8388.c:69:6:ES8388_Init	1
+../Core/Src/es8388.c:134:11:es8388_start	9
+../Core/Src/es8388.c:179:11:es8388_config_dac_output	1
+../Core/Src/es8388.c:188:11:es8388_set_voice_volume	3
+../Core/Src/es8388.c:211:11:es8388_stop	7
